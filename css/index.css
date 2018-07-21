@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, serif;
+}
+
+nav.Navbar {
+  background-color: #263238;
+  width: 100%;
+  padding: 0.35em;
+  text-align: center;
+  height: auto;
+}
+
+nav.Navbar p {
+  font-size: 19px;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+header.Header {
+  font-size: 1.25em;
+  margin: 0 0.5em 0.8em 0.5em;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-family: Markazi Text, sans-serif;
+}
+
+header.Header .Header__Title {
+  padding: 0.5em;
+  border-bottom: 4px solid black;
+  margin-bottom: 0.2em;
+}
+.Header__Title h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: #263238;
+}
+.Header__Title p {
+  margin-top: 0.4em;
+  color: gray;
+  text-transform: capitalize;
+}
