@@ -10,8 +10,14 @@ main form {
 }
 
 main input,
-main select {
+main select,
+main textarea {
   width: 95%;
+}
+
+main p {
+  color: gray;
+  text-align: left;
 }
 
 main fieldset {
@@ -20,6 +26,24 @@ main fieldset {
   border-right: 0;
   border-bottom: 2px solid black;
   margin-bottom: 1em;
+}
+
+main textarea {
+  resize: none;
+  padding: 0;
+}
+
+main form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  width: 95%;
+}
+
+main form span.copy {
+  display: block;
+  text-align: center;
+  color: rgb(170, 165, 165);
 }
 nav.Navbar {
   background-color: #263238;
@@ -57,6 +81,7 @@ header.Header .Header__Title {
   margin-top: 0.4em;
   color: gray;
   text-transform: capitalize;
+  text-align: center;
 }
 
 fieldset.Form__Newsletter input {
@@ -70,6 +95,9 @@ fieldset.Form__Newsletter input {
   *overflow: hidden;
 }
 
+fieldset.Form__Newsletter {
+  border-bottom: 0;
+}
 fieldset.Form__Newsletter label {
   display: block;
   padding-left: 15px;
