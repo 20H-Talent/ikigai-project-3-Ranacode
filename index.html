@@ -11,16 +11,64 @@
 </head>
 
 <body>
-    <nav class="Navbar">
-        <p>THE CODE REVIEW</p>
-    </nav>
+    <main>
+        <nav class="Navbar">
+            <p>THE CODE REVIEW</p>
+        </nav>
 
-    <header class="Header">
-        <div class="Header__Title">
-            <h3>Signup for our newsletter</h3>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
-    </header>
+        <header class="Header">
+            <div class="Header__Title">
+                <h3>Signup for our newsletter</h3>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+        </header>
+        <form action="">
+            <fieldset class="Form__ContactInfo">
+                <legend>Contact Information</legend>
+                <label for="full-name">Full Name</label>
+                <input autofocus type="text" name="full-name" placeholder="Required" />
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="Required" />
+                <label for="phone">Phone Number</label>
+                <input type="phone" name="phone" />
+                <label for="city">City</label>
+                <input type="text" name="city">
+                <label for="city-state">State</label>
+                <select name="city-state" placeholder="Choose state">
+                    <option value="" disabled selected>Choose your state</option>
+                    <option value="state1">State 1</option>
+                    <option value="state2">State 2</option>
+                    <option value="state3">State 3</option>
+                </select>
+                <label for="zipcode">Zip Code</label>
+                <input type="text" name="zipcode">
+            </fieldset>
+            <fieldset class="Form__Newsletter">
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+                <label>
+                    <input type="checkbox" name="news" value="HTML News" /> HTML news
+                </label>
+                <label>
+                    <input type="checkbox" name="news" value="CSS News" /> CSSnews
+                </label>
+                <label>
+                    <input type="checkbox" name="news" value="Javascript News" /> Javascript news
+                </label>
+                <p>Newsletter format</p>
+                <label>
+                    <input type="radio" name="format" value="HTML"> HTML
+                </label>
+                <label>
+                    <input type="radio" name="format" value="Plain text"> Plain Text
+
+                </label>
+
+            </fieldset>
+        </form>
+
+    </main>
+
 
 </body>
 
