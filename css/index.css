@@ -56,23 +56,14 @@ main {
 main form {
   padding: 0.3em;
 }
-main form select,
-main form textarea {
-  width: 95%;
-}
-
-main form input {
-  width: 90%;
-}
-
+main form input:not([type="checkbox"]):not([type="radio"]),
+main form textarea,
 main form select {
-  width: 95.5%;
-  color: gray;
-}
-
-main form input,
-main form select,
-main form textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   padding: 1.15em;
   border: none;
   outline: none;
@@ -86,8 +77,36 @@ main form textarea {
   transition: all 0.3s ease-out;
 }
 
-main form input::placeholder,
+main form select {
+  color: gray;
+  width: 95.5%;
+  background: url(../images/select_doublearrow.png) no-repeat 95% center;
+  background-color: #e0e0e0;
+}
+
+main form select,
+main form textarea {
+  width: 95%;
+}
+
+main form input {
+  width: 90%;
+}
+
+/**************************
+The CSS Prefixes can't combine together
+the selector is broken and css parser will always fails
+*************************/
+main form input::placeholder {
+  text-align: right;
+}
 main form input::-moz-placeholder {
+  text-align: right;
+}
+main form input::-webkit-input-placeholder {
+  text-align: right;
+}
+input:-ms-input-placeholder {
   text-align: right;
 }
 
@@ -117,7 +136,9 @@ main form input[type="radio"] {
 main form legend {
   padding-bottom: 0.4em;
   font-size: 18px;
+  color: #263238;
 }
+
 main form p {
   color: gray;
   text-align: left;
@@ -189,6 +210,9 @@ fieldset.Form__Newsletter input {
   *overflow: hidden;
 }
 
+fieldset.Form__ContactInfo legend {
+  margin-bottom: 0.5em;
+}
 fieldset.Form__ContactInfo label {
   display: block;
   margin-bottom: 0.5em;
@@ -202,5 +226,6 @@ fieldset.Form__Newsletter label {
   text-indent: -15px;
 }
 
-@media screen and (min-width: 320px) {
+fieldset.Form__Newsletter p.Form__Newsletter__Paragraph {
+  margin-top: 1.7em;
 }
