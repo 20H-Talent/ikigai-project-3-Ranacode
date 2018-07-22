@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cMarkazi+Text" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
@@ -24,24 +24,24 @@
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </div>
         </header>
-        <form action="" autocomplete="on">
+        <form autocomplete="on">
             <fieldset class="Form__ContactInfo">
                 <legend>Contact Information</legend>
 
                 <label for="full-name">Full Name</label>
-                <input required autofocus type="text" name="full-name" placeholder="Required" />
+                <input required autofocus type="text" name="full-name" id="full-name" placeholder="Required" />
 
                 <label for="email">Email Address</label>
-                <input required type="email" name="email" placeholder="Required" />
+                <input required type="email" name="email" id="email" placeholder="Required" />
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" />
+                <input type="tel" name="phone" id="phone" />
 
                 <label for="city">City</label>
-                <input type="text" name="city">
+                <input type="text" name="city" id="city">
 
                 <label for="city-state">State</label>
-                <select name="city-state" placeholder="Choose state">
+                <select name="city-state" id="city-state">
                     <option value="" disabled selected>Choose state</option>
                     <option value="state1">State 1</option>
                     <option value="state2">State 2</option>
@@ -49,7 +49,7 @@
                 </select>
 
                 <label for="zipcode">Zip Code</label>
-                <input type="text" name="zipcode">
+                <input type="text" name="zipcode" id="zipcode">
 
             </fieldset>
 
@@ -79,7 +79,7 @@
                 </label>
 
                 <p class="Form__Newsletter__Paragraph">Other topics you'd like to hear about</p>
-                <textarea name="topics" id="" cols="40" rows="7"></textarea>
+                <textarea name="topics" cols="40" rows="7"></textarea>
 
             </fieldset>
 
