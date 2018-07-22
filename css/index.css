@@ -67,17 +67,23 @@ main form input {
 
 main form select {
   width: 95.5%;
+  color: gray;
 }
 
 main form input,
 main form select,
 main form textarea {
-  padding: 0.9em;
+  padding: 1.15em;
   border: none;
   outline: none;
   border-radius: 6px;
   background-color: #e0e0e0;
   margin-bottom: 0.95em;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 main form input::placeholder,
@@ -91,10 +97,23 @@ main form input:placeholder-shown {
   font-size: 0.9em;
 }
 
+main form input:focus,
+main form textarea:focus,
+main form select:focus {
+  background-color: #d1d1d1;
+  -webkit-box-shadow: 2px 3px 11px 0px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 2px 3px 11px 0px rgba(209, 209, 209, 1);
+  box-shadow: 2px 3px 11px 0px rgba(209, 209, 209, 1);
+}
+
 main form label {
   color: #616161;
 }
 
+main form input[type="checkbox"],
+main form input[type="radio"] {
+  transform: scale(1.3);
+}
 main form legend {
   padding-bottom: 0.4em;
   font-size: 18px;
@@ -102,6 +121,7 @@ main form legend {
 main form p {
   color: gray;
   text-align: left;
+  font-size: 1.01em;
 }
 
 main fieldset {
@@ -162,6 +182,7 @@ fieldset.Form__Newsletter input {
   height: 13px;
   padding: 0;
   margin: 0;
+  margin-right: 10px;
   vertical-align: bottom;
   position: relative;
   top: -1px;
