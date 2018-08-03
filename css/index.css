@@ -15,7 +15,7 @@ body {
 nav.Navbar {
   background-color: #263238;
   width: 100%;
-  padding: 0.35em;
+  padding: 0.9em;
   text-align: center;
   height: auto;
   font-size: 19px;
@@ -41,7 +41,7 @@ header.Header .Header__Title {
   width: 100%;
 }
 .Header__Title h3 {
-  font-size: 1.49em;
+  font-size: 1.3em;
   margin: 0.3em 0;
   color: #263238;
 }
@@ -49,7 +49,7 @@ header.Header .Header__Title {
   margin-top: 0.4em;
   margin-bottom: 1.48em;
   color: gray;
-  text-transform: capitalize;
+  font-size: 1.15em;
 }
 
 /**********************
@@ -189,9 +189,9 @@ main form textarea {
 
 main form button[type="submit"] {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   padding: 1em;
-  width: 95%;
+  width: 100%;
   color: white;
   background-color: #00bfa5;
   border: none;
@@ -259,7 +259,8 @@ fieldset.Form__Newsletter p.Form__Newsletter__Paragraph {
 
 @media screen and (min-width: 768px) {
   main {
-    font-size: 20px;
+    font-size: 21px;
+    max-width: 800px;
   }
 
   nav.Navbar {
