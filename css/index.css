@@ -100,6 +100,8 @@ main form select,
 main form textarea,
 main form input {
   width: 100%;
+  padding: 1em;
+  font-size: 0.9em;
 }
 
 main form select {
@@ -207,6 +209,9 @@ main form button[type="submit"]:hover {
   background-color: #26a69a;
 }
 
+footer {
+  font-size: 16px;
+}
 footer > span.copy {
   display: block;
   text-align: center;
@@ -267,8 +272,38 @@ fieldset.Form__Newsletter p.Form__Newsletter__Paragraph {
     font-size: 25px;
   }
 
+  main form input,
+  main form select {
+    max-width: 550px;
+  }
   main form input[type="checkbox"],
   main form input[type="radio"] {
     transform: scale(1.5);
+  }
+
+  div.flex-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.flex-input input {
+    margin-bottom: 0;
+    flex-grow: 2;
+  }
+
+  div.flex-input label {
+    flex-grow: 1;
+  }
+
+  main form label[for="zipcode"] {
+    display: inline;
+    margin-right: 6.1em;
+  }
+  main form button[type="submit"] {
+    font-size: 24px;
+  }
+  footer > span.copy {
+    font-size: 1.2em;
   }
 }
