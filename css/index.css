@@ -1,8 +1,13 @@
-body {
+*,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: Lato, serif;
+  font-size: 16px;
 }
 /***************************
    HEADER STYLES
@@ -13,34 +18,36 @@ nav.Navbar {
   padding: 0.35em;
   text-align: center;
   height: auto;
+  font-size: 19px;
 }
 
 nav.Navbar p {
-  font-size: 19px;
+  font-size: 1em;
   font-weight: bold;
   color: #fafafa;
 }
 
 header.Header {
   font-size: 1.25em;
-  margin: 0 0.5em 0.8em 0.5em;
+  padding: 0.2em 0;
+  margin: 0.2em 1.3em 0.8em 1em;
   border-bottom: 2px solid black;
   text-align: center;
   font-family: Markazi Text, sans-serif;
 }
 
 header.Header .Header__Title {
-  padding: 0.5em;
   border-bottom: 4px solid black;
-  margin-bottom: 0.2em;
+  width: 100%;
 }
 .Header__Title h3 {
   font-size: 1.49em;
-  margin-bottom: 0;
+  margin: 0.3em 0;
   color: #263238;
 }
 .Header__Title p {
   margin-top: 0.4em;
+  margin-bottom: 1.48em;
   color: gray;
   text-transform: capitalize;
 }
@@ -51,10 +58,15 @@ header.Header .Header__Title {
 main {
   max-width: 600px;
   margin: 0 auto;
+  font-size: 16px;
+  padding: 0.3em 0.5em;
 }
 
 main form {
   padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main form input:not([type="checkbox"]):not([type="radio"]),
 main form textarea,
@@ -85,12 +97,13 @@ main form select {
 }
 
 main form select,
-main form textarea {
-  width: 95%;
+main form textarea,
+main form input {
+  width: 100%;
 }
 
-main form input {
-  width: 90%;
+main form select {
+  padding: 1em;
 }
 
 /**************************
@@ -132,6 +145,7 @@ main form label {
 main form input[type="checkbox"],
 main form input[type="radio"] {
   transform: scale(1.3);
+  vertical-align: middle;
 }
 main form legend {
   padding-bottom: 0.4em;
@@ -142,7 +156,9 @@ main form legend {
 main form p {
   color: gray;
   text-align: left;
-  font-size: 1.01em;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 main fieldset {
@@ -150,7 +166,7 @@ main fieldset {
   border-left: 0;
   border-right: 0;
   border-bottom: 2px solid black;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 main form label.checkbox,
@@ -166,9 +182,9 @@ main form input[name="zipcode"] {
   width: 60%;
 }
 
-main textarea {
+main form textarea {
   resize: none;
-  padding: 0;
+  padding: 0.5em;
 }
 
 main form button[type="submit"] {
@@ -191,11 +207,12 @@ main form button[type="submit"]:hover {
   background-color: #26a69a;
 }
 
-main form span.copy {
+footer > span.copy {
   display: block;
   text-align: center;
   color: rgb(170, 165, 165);
   margin-bottom: 10em;
+  margin-top: 3em;
 }
 
 fieldset.Form__Newsletter input {
@@ -210,8 +227,10 @@ fieldset.Form__Newsletter input {
   *overflow: hidden;
 }
 
-fieldset.Form__ContactInfo legend {
-  margin-bottom: 0.5em;
+fieldset.Form__ContactInfo legend,
+fieldset.Form__Newsletter legend {
+  margin: 0.5em 0;
+  font-size: 1.4em;
 }
 fieldset.Form__ContactInfo label {
   display: block;
@@ -226,6 +245,29 @@ fieldset.Form__Newsletter label {
   text-indent: -15px;
 }
 
+fieldset.Form__Newsletter p {
+  margin: 0.9em 0;
+}
+
+fieldset.Form__Newsletter p:first-of-type {
+  margin-top: 0;
+}
+
 fieldset.Form__Newsletter p.Form__Newsletter__Paragraph {
   margin-top: 1.7em;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    font-size: 20px;
+  }
+
+  nav.Navbar {
+    font-size: 25px;
+  }
+
+  main form input[type="checkbox"],
+  main form input[type="radio"] {
+    transform: scale(1.5);
+  }
 }
