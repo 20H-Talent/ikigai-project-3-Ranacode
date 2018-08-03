@@ -234,7 +234,7 @@ fieldset.Form__Newsletter input {
 
 fieldset.Form__ContactInfo legend,
 fieldset.Form__Newsletter legend {
-  margin: 0.5em 0;
+  margin: 0.5em 0 1em 0;
   font-size: 1.4em;
 }
 fieldset.Form__ContactInfo label {
