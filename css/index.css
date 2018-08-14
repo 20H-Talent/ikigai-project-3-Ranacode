@@ -9,6 +9,7 @@ body {
   font-family: Lato, serif;
   font-size: 16px;
 }
+
 /***************************
    HEADER STYLES
 ***************************/
@@ -263,13 +264,23 @@ fieldset.Form__Newsletter p.Form__Newsletter__Paragraph {
 }
 
 @media screen and (min-width: 768px) {
+  nav.Navbar {
+    font-size: 25px;
+  }
+
+  header.Header {
+    margin: 1.2em 0 1.9em 0.33em;
+  }
+  .Header__Title p {
+    margin-top: 0.4em;
+    margin-bottom: 1.48em;
+    color: gray;
+    font-size: 0.8em;
+  }
+
   main {
     font-size: 21px;
     max-width: 800px;
-  }
-
-  nav.Navbar {
-    font-size: 25px;
   }
 
   main form input,

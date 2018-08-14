@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato%7cMarkazi+Text" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    <meta name="viewport" content="widt768=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 768ontent="IE=edge">
+    <link href="https://fonts.googleapi768.com/css?family=Lato%7cMarkazi+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https:768/use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Code review - form</title>
@@ -51,7 +51,7 @@
 
                     <label for="city-state">State</label>
                     <select name="city-state" id="city-state">
-                        <option value="" disabled selected>Choose state</option>
+                        <option value="" disabled selected hidden>Choose state</option>
                         <option value="state1">State 1</option>
                         <option value="state2">State 2</option>
                         <option value="state3">State 3</option>
@@ -66,28 +66,28 @@
                 <p>Select the newsletters you would like to receive</p>
 
                 <label class="checkbox">
-                    <input type="checkbox" name="news" value="HTML News" /> HTML news
+                    <input type="checkbox" id="html-news" name="news" value="HTML News" /> HTML News
                 </label>
 
                 <label class="checkbox">
-                    <input type="checkbox" name="news" value="CSS News" /> CSSnews
+                    <input type="checkbox" name="news" id="css-news" value="CSS News" /> CSS News
                 </label>
 
                 <label class="checkbox">
-                    <input type="checkbox" name="news" value="Javascript News" /> Javascript news
+                    <input type="checkbox" name="news" id="js-news" value="Javascript News" /> Javascript News
                 </label>
                 <p>Newsletter format</p>
 
                 <label class="radio">
-                    <input type="radio" name="format" value="HTML"> HTML
+                    <input type="radio" id="radio-html" name="format" value="HTML"> HTML
                 </label>
 
                 <label class="radio">
-                    <input type="radio" name="format" value="Plain text"> Plain Text
+                    <input type="radio" id="radio-plain-text" name="format" value="Plain text"> Plain Text
                 </label>
 
                 <p class="Form__Newsletter__Paragraph">Other topics you'd like to hear about</p>
-                <textarea name="topics" cols="40" rows="4"></textarea>
+                <textarea name="topics" id="observations" cols="40" rows="4"></textarea>
 
             </fieldset>
             <button type="submit">Sign Up</button>
